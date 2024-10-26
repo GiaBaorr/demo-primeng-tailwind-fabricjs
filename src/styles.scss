@@ -1,4 +1,16 @@
-@import "primeng/resources/themes/aura-light-noir/theme.css";
+@import "primeng/resources/themes/aura-light-cyan/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
 @tailwind utilities;
+
+// Primeng does provide built error
+// maintain this config based on selected Primeng built-in theme
+.text-danger-lighter {
+  color: #ef4444;
+}
+.text-danger {
+  color: #dc2626;
+}
+.text-danger-darker {
+  color: #b91c1c;
+}

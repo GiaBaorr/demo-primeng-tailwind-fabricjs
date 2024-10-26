@@ -7,14 +7,26 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {RouterModule} from "@angular/router";
 import {TranslateModule} from "@ngx-translate/core";
+import {ErrorDirective} from './directives/error.directive';
+import {TranslateParamsPipe} from './pipes/translate-params.pipe';
+import {InputTextModule} from "primeng/inputtext";
+import {AutoFocusModule} from "primeng/autofocus";
+import {FloatLabelModule} from "primeng/floatlabel";
+import {PasswordModule} from "primeng/password";
 
 const primeModules = [
+  AutoFocusModule,
   ButtonModule,
+  FloatLabelModule,
+  InputTextModule,
+  PasswordModule,
   RippleModule
 ];
 
 const sharedModules = [
-  ErrorMessageDirective
+  ErrorMessageDirective,
+  ErrorDirective,
+  TranslateParamsPipe,
 ];
 
 const coreModules = [
@@ -37,8 +49,8 @@ const coreModules = [
   ],
   exports: [
     ...primeModules,
-    ...sharedModules,
-    ...coreModules
+    ...coreModules,
+    ...sharedModules
   ]
 })
 export class SharedModule {
