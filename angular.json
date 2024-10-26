@@ -55,7 +55,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "input": "src/theme-aura-dark-cyan.scss",
+                "bundleName": "theme-dark",
+                "inject": false
+              },
+              {
+                "input": "src/theme-aura-light-cyan.scss",
+                "bundleName": "theme-light",
+                "inject": false
+              }
             ],
             "scripts": []
           },

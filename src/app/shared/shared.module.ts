@@ -13,6 +13,7 @@ import {InputTextModule} from "primeng/inputtext";
 import {AutoFocusModule} from "primeng/autofocus";
 import {FloatLabelModule} from "primeng/floatlabel";
 import {PasswordModule} from "primeng/password";
+import {InputSwitchModule} from "primeng/inputswitch";
 
 const primeModules = [
   AutoFocusModule,
@@ -20,7 +21,8 @@ const primeModules = [
   FloatLabelModule,
   InputTextModule,
   PasswordModule,
-  RippleModule
+  RippleModule,
+  InputSwitchModule
 ];
 
 const sharedModules = [
